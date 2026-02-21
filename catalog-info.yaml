@@ -2,11 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: payment-service
-  description: Microservicio encargado de procesar transacciones de la pasarela de pagos.
+  description: Microservicio de pagos
   annotations:
-    # Si quieres que se vea el botón de GitHub en Backstage
-    github.com/project-slug: TU_USUARIO_GITHUB/payment
-    # Para ver la documentación (opcional)
+    github.com/project-slug: TU_USUARIO_DE_GITHUB/payment
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
