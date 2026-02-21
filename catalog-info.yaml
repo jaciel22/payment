@@ -2,12 +2,19 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: payment-service
-  description: Microservicio de pagos
+  description: |
+    Servicio core para el procesamiento de transacciones financieras. 
+    Maneja integraciones con Stripe y PayPal, y gestiona el estado de los pagos.
   annotations:
+    # Sustituye con tu repo real para habilitar la pestaña de GitHub
     github.com/project-slug: TU_USUARIO_DE_GITHUB/payment
     backstage.io/techdocs-ref: dir:.
+  tags:
+    - fintech
+    - java # o python, el lenguaje que uses
+    - pci-compliant
 spec:
   type: service
-  lifecycle: experimental
-  owner: guest
+  lifecycle: production # Cambiado de experimental a algo más serio
+  owner: payments-team   # El equipo responsable
   system: financial-system

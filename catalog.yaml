@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: payment-root-location
+  description: Punto de entrada para todos los recursos del microservicio de pagos
+spec:
+  targets:
+    - ./component-info.yaml
+    - ./api-info.yaml
+    - ./org-info.yaml

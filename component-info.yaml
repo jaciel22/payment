@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: payment-service
+  description: |
+    Servicio encargado del procesamiento seguro de transacciones. 
+    Soporta flujos de tarjetas de crédito y billeteras digitales.
+  annotations:
+    # REEMPLAZA "TU_USUARIO" con tu usuario real de GitHub
+    github.com/project-slug: TU_USUARIO/payment
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - critical-path
+    - python
+    - payments
+spec:
+  type: service
+  lifecycle: production
+  owner: payments-team
+  system: financial-system
+  providesApi:
+    - payment-gateway-api

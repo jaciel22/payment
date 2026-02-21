@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: payments-team
+  description: Equipo encargado del ecosistema financiero y pasarelas de pago.
+spec:
+  type: team
+  children: []
